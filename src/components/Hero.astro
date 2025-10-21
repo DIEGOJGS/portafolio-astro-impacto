@@ -1,9 +1,19 @@
 ---
-import Container from './Container.astro'; // 1. Importamos el Contenedor
+import Container from './Container.astro';
+
+// 1. Importamos nuestro componente de React
+import Scene3D from './Scene3D.jsx';
 ---
-<section class="h-screen bg-neutral-950 text-white flex items-center">
-    <Container>
-        <h1 class="text-5xl font-bold">Diego JGS</h1>
-        <h2 class="text-3xl text-neutral-400">Desarrollador Full-Stack</h2>
-    </Container>
+<section class="h-screen bg-neutral-950 text-white relative">
+
+    <div class="absolute inset-0 z-10 flex items-center">
+        <Container>
+            <h1 class="text-5xl font-bold">Diego JGS</h1>
+            <h2 class="text-3xl text-neutral-400">Desarrollador Full-Stack</h2>
+        </Container>
+    </div>
+
+    <div class="absolute inset-0 z-0">
+        <Scene3D client:load />
+    </div>
 </section>
