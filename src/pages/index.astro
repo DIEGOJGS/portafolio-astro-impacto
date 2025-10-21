@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// 1. Importar la plantilla maestra
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// 2. Importar los componentes de sección
+import Hero from '../components/Hero.astro';
+import Proyectos from '../components/Proyectos.astro';
+import SobreMi from '../components/SobreMi.astro';
+import Habilidades from '../components/Habilidades.astro';
+import Contacto from '../components/Contacto.astro';
 ---
-
-<Layout>
-	<Welcome />
+<Layout 
+    title="Diego JGS | Portafolio de Desarrollador" 
+    description="Portafolio web de Diego JGS, desarrollador full-stack."
+>
+    <main>
+        <Hero />
+        <Proyectos />
+        <SobreMi />
+        <Habilidades />
+        <Contacto />
+    </main>
 </Layout>
