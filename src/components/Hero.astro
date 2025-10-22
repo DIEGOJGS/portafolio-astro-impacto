@@ -1,19 +1,17 @@
 ---
 import Container from './Container.astro';
 import Scene3D from './Scene3D.jsx';
-
-// 1. Importamos nuestro NUEVO componente de texto
 import AnimatedHeroText from './AnimatedHeroText.jsx';
 ---
-<section class="h-screen bg-neutral-950 text-white relative">
+<section class="h-screen bg-neutral-950 text-white flex flex-col md:flex-row">
 
-    <div class="absolute inset-0 z-10 flex items-center">
+    <div class="pt-24 pb-8 md:w-1/2 flex flex-col justify-center md:pt-0 md:pb-0"> 
         <Container>
             <AnimatedHeroText client:load />
         </Container>
     </div>
 
-    <div class="absolute inset-0 z-0">
+    <div class="flex-1 w-full min-h-0 md:w-1/2">
         <Scene3D client:load />
     </div>
 </section>

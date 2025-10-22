@@ -1,6 +1,34 @@
 ---
-// Sección 3
+import Container from './Container.astro';
 ---
-<section class="h-screen bg-neutral-100 text-neutral-900">
-    <h2 class="text-3xl font-bold">Sección: Sobre Mí</h2>
+<section id="sobre-mi" class="bg-white text-neutral-900 py-20">
+  
+  <Container>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <div class="w-full h-80 bg-neutral-200 rounded-lg shadow-lg">
+        <p class="p-4 text-neutral-500">
+          (Placeholder para tu foto profesional)
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold mb-4">Sobre Mí</h2>
+        <p class="text-lg text-neutral-700 mb-4">
+          Soy un desarrollador apasionado por crear soluciones tecnológicas que resuelven problemas reales. Con experiencia en el stack full-stack, disfruto tanto del diseño de APIs robustas en el backend como de la creación de experiencias de usuario intuitivas.
+        </p>
+        <p class="text-lg text-neutral-700 mb-6">
+          Siempre estoy aprendiendo y explorando nuevas tecnologías para mejorar mis habilidades. ¡Hablemos!
+        </p>
+
+        <a 
+          href="#contacto" 
+          class="bg-neutral-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-neutral-700 transition-colors"
+        >
+          Contáctame
+        </a>
+      </div>
+
+    </div>
+  </Container>
 </section>

@@ -43,7 +43,7 @@ export default function AnimatedHeroText() {
 
   // 5. El HTML que renderiza este componente
   return (
-    <div>
+    <div className="pb-16 md:pb-0">
       <h1 ref={titleRef} className="text-5xl font-bold">Diego JGS</h1>
       <h2 ref={subtitleRef} className="text-3xl text-neutral-400">
         Desarrollador Full-Stack

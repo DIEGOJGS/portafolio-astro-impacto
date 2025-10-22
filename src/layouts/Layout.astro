@@ -6,7 +6,8 @@ interface Props {
 }
 const { title, description } = Astro.props;
 
-import '../styles/global.css'; // <--- AÑADE ESTA LÍNEA
+import '../styles/global.css';
+import Navbar from '../components/Navbar.jsx'; // <--- AÑADE ESTA LÍNEA
 ---
 <!doctype html>
 <html lang="es" class="scroll-smooth">
@@ -21,6 +22,6 @@ import '../styles/global.css'; // <--- AÑADE ESTA LÍNEA
         <title>{title}</title>
         </head>
     <body>
-        <slot />
+        <Navbar /><slot />
     </body>
 </html>
